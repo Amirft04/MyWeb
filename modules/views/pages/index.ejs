@@ -1,3 +1,19 @@
-<h1>
-    Ali
-</h1>
+<div class="overlay"></div>
+<section class="top-part">
+  <video controls autoplay loop>
+    <source src="../../../public/assets/videos/video.mp4" type="video/mp4" />
+    <source src="../../../public/assets/videos/video.ogg" type="video/ogg" />
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="cd-hero">
+  <%- include( '../partials/TopSlider.ejs' ) %>
+
+  <ul class="cd-hero-slider">
+    <%- include( '../partials/Newline.ejs' ) %> <%- include(
+    '../partials/AboutUs.ejs' ) %> <%- include( '../partials/Featured.ejs' ) %>
+    <%- include( '../partials/OurProjects.ejs' ) %> <%- include(
+    '../partials/ContactUs.ejs' ) %>
+  </ul>
+</section>
