@@ -12,8 +12,9 @@ app.use(expressLayouts);
 app.set("views", path.join(__dirname, "/modules/views"));
 app.set(
   "layout",
-  "layouts/mainLayout.ejs"
+  "layouts/mainLayout.ejs","layouts/dashboardLayout.ejs"
 );
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({ type: "application/json" }));
 
